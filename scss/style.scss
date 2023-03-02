@@ -3,58 +3,111 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 body {
-    display: grid;
+  display: grid;
 }
 
 #page_main {
-    min-height: 80vh;
-    display: grid;
-    place-items: center;
- 
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  max-width: 900px;
+
 
 }
 
 .welcome {
-  min-width: 100vw;
   position: relative;
   display: inline-block;
   object-fit: cover;
+  max-width: 500px;
+
 
 }
 
 .welcome1 {
   position: absolute;
   top: 20%;
-  left: 25%;
-  width: 400px;
+  left: 30%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: none;
   padding: 10px;
-  text-align: center;
+  color: aliceblue;
+  text-align: start;
+  text-decoration: overline;
+  text-overflow: wrap;
+  width: 200px;
+
 }
 
 
 #sec2 {
-    display: grid;
-    place-items: center;
-   
+  display: grid;
+  place-items: center;
+  max-width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  img {
+    align-self: center;
+    object-fit: cover;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    text-overflow: wrap;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    text-overflow: wrap;
+  }
+
+  p {
+    text-overflow: wrap;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    text-align: center;
+    text-overflow: wrap;
+  }
 }
 
 #sec3 {
   display: grid;
   place-items: center;
-  min-width: 100%;
+  max-width: 90%;
+  margin-top: 70px;
+  margin-bottom: 70px;
 
   img {
-    display: grid;
     object-fit: cover;
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
 
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-overflow: wrap;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
-
