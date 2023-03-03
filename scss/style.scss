@@ -52,6 +52,7 @@ body {
   max-width: 80%;
   margin-top: 50px;
   margin-bottom: 50px;
+ 
 
   img {
     align-self: center;
@@ -91,6 +92,7 @@ body {
   max-width: 90%;
   margin-top: 70px;
   margin-bottom: 70px;
+  background-color: rgb(205, 244, 255);
 
   img {
     object-fit: cover;
@@ -102,6 +104,7 @@ body {
   h3 {
     text-align: center;
     margin-bottom: 10px;
+    background-color: rgb(205, 244, 255);
   }
 
   p {
@@ -109,5 +112,6 @@ body {
     width: 400px;
     text-align: center;
     margin-bottom: 20px;
+background-color: rgb(205, 244, 255);
   }
 }

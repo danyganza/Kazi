@@ -10,7 +10,7 @@ footer {
   min-height: 10vh;
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: rgb(186, 207, 206);
 }
 
@@ -92,6 +92,7 @@ body {
   max-width: 90%;
   margin-top: 70px;
   margin-bottom: 70px;
+  background-color: rgb(205, 244, 255);
 }
 #sec3 img {
   object-fit: cover;
@@ -102,12 +103,14 @@ body {
 #sec3 h3 {
   text-align: center;
   margin-bottom: 10px;
+  background-color: rgb(205, 244, 255);
 }
 #sec3 p {
   text-overflow: wrap;
   width: 400px;
   text-align: center;
   margin-bottom: 20px;
+  background-color: rgb(205, 244, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
