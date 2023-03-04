@@ -16,26 +16,18 @@ body {
   min-height: 80vh;
   display: grid;
   place-items: center;
-  max-width: 300px;
-
-
+ width: 100%;
 }
-
-
 .welcome {
   position: relative;
   display: inline-block;
   object-fit: cover;
 
   #big{
-      min-width: 100vw;
+     max-width: 100%;
   }
 
-
-
-
 }
-
 .welcome1 {
   position: absolute;
   top: 20%;
@@ -48,58 +40,49 @@ body {
   text-decoration: overline;
   text-overflow: wrap;
   width: 200px;
-
 }
-
-
 #sec2 {
   display: grid;
   place-items: center;
   max-width: 90%;
-  margin-top: 50px;
-  margin-bottom: 50px;
- 
-
+  margin-top: 20px;
+  margin-bottom: 20px;
   img {
     align-self: center;
     object-fit: cover;
     max-width: 100%;
     margin-bottom: 30px;
   }
-
-  h1 {
+ h1 {
     text-align: center;
     margin-bottom: 10px;
     text-overflow: wrap;
   }
-
   h3 {
     text-align: center;
     margin-bottom: 5px;
     text-overflow: wrap;
   }
-
   p {
     text-overflow: wrap;
-    width: 90%;
     text-align: center;
     margin-bottom: 20px;
-  }
+    word-wrap: break-word;
+    letter-spacing: 2px;
 
+  }
   h4 {
     text-align: center;
     text-overflow: wrap;
   }
 }
-
 #sec3 {
   display: grid;
   place-items: center;
   max-width: 90%;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  background-color: rgb(205, 244, 255);
-
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: rgb(186, 207, 206);
   img {
     object-fit: cover;
     max-width: 90%;
@@ -109,40 +92,45 @@ body {
   h3 {
     text-align: center;
     margin-bottom: 10px;
-    background-color: rgb(205, 244, 255);
+    background-color: rgb(186, 207, 206);
   }
   p {
     text-overflow: wrap;
     width: 90%;
     text-align: center;
     margin-bottom: 20px;
-background-color: rgb(205, 244, 255);
+    background-color: rgb(186, 207, 206);
   }
 }
 @media only screen and (min-width: 600px){
   #page_main {
-  min-width: 600px;
+  min-width: 100vw;
   place-items: center;
   }
   #big {
     min-width: 100vw;
   }
 }
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 900px){
   #page-main {
     height: 80vh;
-    min-width: 800px;
+    max-width: 100vw;
   }
   #big {
-    min-width: 100vw;
+    min-width: 90vw;
+    margin-bottom: 30px;
   }
   #sec2{
     grid-template-columns: 2fr 1fr;
     p{
-      min-height: 400px;
+      text-align: center;
+      text-overflow: wrap;
+      min-width: 100px;
+      margin-left: 20px;
     }
   }
   #sec3 {
     grid-template-columns: 1fr 1fr 1fr;
+
   }
 }
