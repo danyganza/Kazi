@@ -28,14 +28,16 @@ body {
   min-height: 80vh;
   display: grid;
   place-items: center;
-  max-width: 900px;
+  max-width: 300px;
 }
 
 .welcome {
   position: relative;
   display: inline-block;
   object-fit: cover;
-  max-width: 500px;
+}
+.welcome #big {
+  min-width: 100vw;
 }
 
 .welcome1 {
@@ -55,7 +57,7 @@ body {
 #sec2 {
   display: grid;
   place-items: center;
-  max-width: 80%;
+  max-width: 90%;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -77,7 +79,7 @@ body {
 }
 #sec2 p {
   text-overflow: wrap;
-  width: 400px;
+  width: 90%;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -96,7 +98,7 @@ body {
 }
 #sec3 img {
   object-fit: cover;
-  max-width: 100%;
+  max-width: 90%;
   margin-top: 50px;
   margin-bottom: 10px;
 }
@@ -107,10 +109,38 @@ body {
 }
 #sec3 p {
   text-overflow: wrap;
-  width: 400px;
+  width: 90%;
   text-align: center;
   margin-bottom: 20px;
   background-color: rgb(205, 244, 255);
+}
+
+@media only screen and (min-width: 600px) {
+  #page_main {
+    min-width: 600px;
+    place-items: center;
+  }
+  #big {
+    min-width: 100vw;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #page-main {
+    height: 80vh;
+    min-width: 800px;
+  }
+  #big {
+    min-width: 100vw;
+  }
+  #sec2 {
+    grid-template-columns: 2fr 1fr;
+  }
+  #sec2 p {
+    min-height: 400px;
+  }
+  #sec3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
