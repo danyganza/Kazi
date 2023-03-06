@@ -40,6 +40,7 @@ body {
 }
 .welcome #big {
   max-width: 100%;
+  height: 600px;
 }
 
 .welcome1 {
@@ -67,6 +68,7 @@ body {
   align-self: center;
   object-fit: cover;
   max-width: 100%;
+  height: 400px;
   margin-bottom: 30px;
 }
 #sec2 h1 {
@@ -96,41 +98,39 @@ body {
   place-items: center;
   max-width: 90%;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: rgb(186, 207, 206);
 }
 #sec3 img {
   object-fit: cover;
-  max-width: 90%;
+  max-width: 100%;
   margin-top: 50px;
   margin-bottom: 10px;
 }
 #sec3 h3 {
   text-align: center;
   margin-bottom: 10px;
-  background-color: rgb(186, 207, 206);
 }
 #sec3 p {
   text-overflow: wrap;
   width: 90%;
   text-align: center;
   margin-bottom: 20px;
-  background-color: rgb(186, 207, 206);
 }
 
 @media only screen and (min-width: 600px) {
   #page_main {
-    min-width: 100vw;
+    min-width: 100%;
     place-items: center;
   }
   #big {
-    min-width: 100vw;
+    min-width: 100%;
   }
 }
 @media only screen and (min-width: 900px) {
   #page-main {
     height: 80vh;
-    max-width: 100vw;
+    max-width: 100%;
   }
   #big {
     min-width: 90vw;
