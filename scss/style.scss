@@ -17,6 +17,7 @@ body {
   display: grid;
   place-items: center;
  width: 100%;
+ background-image: url(/images/background2.jpeg);
 }
 .welcome {
   position: relative;
@@ -33,10 +34,11 @@ body {
   position: absolute;
   top: 20%;
   left: 30%;
-  transform: translate(-50%, -50%);
+text-shadow: 2rem; 
+ transform: translate(-50%, -50%);
   background-color: none;
   padding: 10px;
-  color: aliceblue;
+  color: rgb(18, 21, 23);
   text-align: start;
   text-decoration: overline;
   text-overflow: wrap;
@@ -84,7 +86,8 @@ place-items: center;
   max-width: 90%;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: rgb(186, 207, 206);
+background-image: url(/images/background4.jpeg);
+
   img {
     object-fit: cover;
     max-width: 100%;

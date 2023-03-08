@@ -4,7 +4,7 @@ header {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
-  background-color: rgb(186, 207, 206);
+  background-image: url(/images/background4.jpeg);
 }
 
 footer {
@@ -13,7 +13,7 @@ footer {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: rgb(186, 207, 206);
+  background-image: url(/images/background4.jpeg);
 }
 
 * {
@@ -31,6 +31,7 @@ body {
   display: grid;
   place-items: center;
   width: 100%;
+  background-image: url(/images/background2.jpeg);
 }
 
 .welcome {
@@ -47,10 +48,11 @@ body {
   position: absolute;
   top: 20%;
   left: 30%;
+  text-shadow: 2rem;
   transform: translate(-50%, -50%);
   background-color: none;
   padding: 10px;
-  color: aliceblue;
+  color: rgb(18, 21, 23);
   text-align: start;
   text-decoration: overline;
   text-overflow: wrap;
@@ -99,7 +101,7 @@ body {
   max-width: 90%;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: rgb(186, 207, 206);
+  background-image: url(/images/background4.jpeg);
 }
 #sec3 img {
   object-fit: cover;
@@ -118,7 +120,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   #page_main {
     min-width: 100%;
     place-items: center;
@@ -127,7 +129,7 @@ body {
     min-width: 100%;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1020px) {
   #page-main {
     height: 80vh;
     max-width: 100%;
