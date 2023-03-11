@@ -1,5 +1,6 @@
 @use "header";
 @use "footer";
+@use "general";
 
 
 * {
@@ -12,7 +13,7 @@
   }
 #page_main {
       width: 100%;
-    min-height: 80vh;
+    min-height: 70vh;
     display: grid;
     place-items: center;
     background-color: rgb(186, 207, 206);
@@ -23,6 +24,7 @@
     h1{
       text-align: center;
     }
+    
     h2{
       text-align: center;
     }
@@ -90,18 +92,20 @@
       min-width: 100%;
     }
   }
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 1020px) {
     #page-main {
+     
       height: 80vh;
       max-width: 100%;
       margin-top: 40px;
       background-image: url(/images/boat-wide.jpeg);
     }
     .staff-directory {
+           display: grid;
+      grid-template: 1fr 1fr 1fr;
       min-width: 90vw;
       margin-bottom: 30px;
       background-image: url(/images/plane.jpeg);
-
     }
     #sec1 {
       display: grid;
@@ -115,4 +119,5 @@
       min-width: 100px;
       margin-left: 20px;
     }
+ 
   }

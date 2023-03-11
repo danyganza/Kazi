@@ -92,6 +92,9 @@
     width: 10%;
     height: 60%;
   }
+  img {
+    min-width: 80px;
+  }
 }
 footer {
   min-height: 15vh;
@@ -146,60 +149,130 @@ body {
   display: grid;
 }
 
-main {
+#page_main {
   min-height: 80vh;
   display: grid;
   place-items: center;
-  text-align: center;
   width: 100%;
-  background-image: url(/images/warehouse-background.jpeg);
+  background-image: url(/images/background2.jpeg);
 }
 
-#intro {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 30px;
+.welcome {
+  position: relative;
+  display: inline-block;
+  object-fit: cover;
+}
+.welcome #big {
+  max-width: 100%;
+  height: 600px;
+}
+
+.welcome1 {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  text-shadow: 2rem;
+  transform: translate(-50%, -50%);
+  background-color: none;
+  padding: 10px;
+  color: rgb(18, 21, 23);
+  text-align: start;
+  text-decoration: overline;
+  text-overflow: wrap;
+  width: 200px;
+}
+
+#sec2 {
+  display: grid;
+  place-items: center;
+  max-width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#sec2 img {
+  align-self: center;
+  object-fit: cover;
+  max-width: 100%;
+  height: 400px;
   margin-bottom: 30px;
 }
-
-#Products {
-  display: grid;
-  place-content: center;
-}
-#Products h3 {
+#sec2 h1 {
   text-align: center;
+  margin-bottom: 10px;
+  text-overflow: wrap;
 }
-#Products p {
-  margin-top: 5px;
-  margin-left: 50px;
-  margin-right: 50px;
-  height: 200px;
+#sec2 h3 {
+  text-align: center;
+  margin-bottom: 5px;
+  text-overflow: wrap;
 }
-#Products img {
-  object-fit: cover;
-  height: 300px;
-  width: 80%;
+#sec2 p {
+  text-overflow: wrap;
+  text-align: center;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  letter-spacing: 2px;
+}
+#sec2 h4 {
+  text-align: center;
+  text-overflow: wrap;
+}
+
+#sec3 {
+  display: grid;
+  place-items: center;
+  max-width: 90%;
   margin-top: 20px;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
+  background-image: url(/images/background4.jpeg);
+}
+#sec3 img {
+  object-fit: cover;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+#sec3 h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#sec3 p {
+  text-overflow: wrap;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 700px) {
-  #Products {
-    display: grid;
-    grid-template-columns: 2fr;
-    width: 100%;
+@media only screen and (min-width: 600px) {
+  #page_main {
+    min-width: 100%;
     place-items: center;
   }
+  #big {
+    min-width: 100%;
+  }
 }
-@media only screen and (min-width: 1020px) {
-  #Products {
-    min-height: 80vh;
-    display: grid;
+@media only screen and (min-width: 900px) {
+  #page-main {
+    height: 80vh;
+    max-width: 100%;
+  }
+  #big {
+    min-width: 90vw;
+    margin-bottom: 30px;
+  }
+  #sec2 {
+    grid-template-columns: 2fr 1fr;
+  }
+  #sec2 p {
+    text-align: center;
+    text-overflow: wrap;
+    min-width: 100px;
+    margin-left: 20px;
+  }
+  #sec3 {
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    place-items: center;
-    background-image: url(/images/background2.jpeg);
   }
 }
 
-/*# sourceMappingURL=products.css.map */
+/*# sourceMappingURL=style.css.map */

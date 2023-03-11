@@ -7,26 +7,37 @@
     <meta name=viewport content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Kazi Logistics</title>
-
+    <link rel="shortcut icon" href="/images/kazi 1.png" type="image/x-icon">
 </head>
 
 <body>
 
     <header id="pager_header">
+        <input type="radio" name="menu" id="menu_open" class="menu_radio_button">
+        <input type="radio" name="menu" id="menu_close" class="menu_radio_button">
 
-        <div>
-            <h1> Kazi Logistics</h1>
-        </div>
+        <img src="/images/My project.png" alt="logo">
+        <label for="menu_open">
 
-        <div>
-            <img src="/images/menu.svg" alt="" width="50px">
-        </div>
+            <img src="/images/menu.svg" alt="Open Menu Label" class="hoverable">
+        </label>
+        <section id="mobile_menu">
+            <div id="menu_header">
+                <label for="menu_close">
+                    <h3>Close menu</h3>
+                </label>
+            </div>
+            <a href="/index.html">Home</a>
+            <a href="/pages/About.html">About</a>
+            <a href="/pages/Contacts.html">Contacts</a>
+            <a href="/pages/products.html">Products</a>
+        </section>
     </header>
     <main id="page_main">
         <section>
             <div class="welcome">
 
-                <img id="big" src="/images/long-ship.jpeg" alt="bigboat">
+                <img id="big" src="/images/warehouse-background.jpeg" alt="bigboat">
                 <div class="welcome1">
                     <h1>KAZI LOGISTCS</h1>
                     <h4>your one-stop solution for all your supply chain management needs.</h4>
@@ -49,7 +60,7 @@
                     across the country or around the world, we have the experience and infrastructure to get the job
                     done right.</p>
 
-                <h4>Read More</h4>
+                <h4 id="read">Read More</h4>
             </div>
         </section>
 
@@ -87,21 +98,12 @@
             <img src="/images/acebook and twitter icons instagram_3596355.png" alt="" width="200px">
 
         </div>
-
+        <div>
+            <img src="/images/My project.png" alt="">
+        </div>
         <div>
             <p>© 2023 Kazi Logistics</p>
         </div>
-
-
-        <div>
-            <a href="/index.html">Home</a>
-            |<a href="/pages/About.html">About</a>
-            | <a href="/pages/Contacts.html">Contacts</a>
-            |<a href="/pages/products.html">Products</a>
-        </div>
-
-
-
     </footer>
 
 </body>

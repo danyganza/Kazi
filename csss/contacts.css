@@ -92,6 +92,9 @@
     width: 10%;
     height: 60%;
   }
+  img {
+    min-width: 80px;
+  }
 }
 footer {
   min-height: 15vh;
@@ -146,60 +149,105 @@ body {
   display: grid;
 }
 
-main {
-  min-height: 80vh;
+#page_main {
+  width: 100%;
+  min-height: 70vh;
   display: grid;
   place-items: center;
-  text-align: center;
-  width: 100%;
-  background-image: url(/images/warehouse-background.jpeg);
+  background-color: rgb(186, 207, 206);
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-
-#intro {
-  margin-left: 50px;
-  margin-right: 50px;
+#page_main h1 {
+  text-align: center;
+}
+#page_main h2 {
+  text-align: center;
+}
+#page_main #div {
+  width: 100%;
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-#Products {
-  display: grid;
-  place-content: center;
+#page_main h3 {
+  width: 200px;
 }
-#Products h3 {
+
+ul {
+  display: grid;
+  place-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.staff-directory {
+  display: grid;
+  grid-template-columns: repeat(1 220px);
+  place-items: center;
+  max-width: 100%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.staff-directory img {
+  max-height: 250px;
+  max-width: 200px;
+  align-self: center;
+  border-radius: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.staff-directory h3 {
   text-align: center;
 }
-#Products p {
-  margin-top: 5px;
-  margin-left: 50px;
-  margin-right: 50px;
-  height: 200px;
+.staff-directory h2 {
+  text-align: center;
 }
-#Products img {
-  object-fit: cover;
-  height: 300px;
-  width: 80%;
-  margin-top: 20px;
-  margin-bottom: 2px;
+.staff-directory p {
+  text-align: center;
 }
 
-@media only screen and (min-width: 700px) {
-  #Products {
-    display: grid;
-    grid-template-columns: 2fr;
-    width: 100%;
+@media only screen and (min-width: 600px) {
+  #page_main {
+    min-width: 100%;
     place-items: center;
+  }
+  .staff-directory {
+    min-width: 100%;
   }
 }
 @media only screen and (min-width: 1020px) {
-  #Products {
-    min-height: 80vh;
+  #page-main {
+    height: 80vh;
+    max-width: 100%;
+    margin-top: 40px;
+    background-image: url(/images/boat-wide.jpeg);
+  }
+  .staff-directory {
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    min-width: 90vw;
+    margin-bottom: 30px;
+    background-image: url(/images/plane.jpeg);
+  }
+  #sec1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    place-items: center;
-    background-image: url(/images/background2.jpeg);
+    background-image: url(/images/redtruck.jpeg);
+  }
+  #div {
+    text-align: center;
+    text-overflow: wrap;
+    min-width: 100px;
+    margin-left: 20px;
   }
 }
 
-/*# sourceMappingURL=products.css.map */
+/*# sourceMappingURL=contacts.css.map */
