@@ -103,10 +103,16 @@ footer {
 footer img {
   width: 100px;
 }
+footer #mark {
+  display: grid;
+  place-self: center;
+}
 
 @media only screen and (min-width: 1020px) {
   footer {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    place-items: center;
+    width: 100%;
   }
 }
 * {
@@ -229,7 +235,8 @@ body {
     height: 1000px;
   }
   #about1 {
-    grid-template-columns: repeat(1fr 1fr 1fr 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 90%;
   }
   p {
