@@ -17,7 +17,7 @@
 
 
 
-        <img src="/images/My project.png" alt="logo">
+        <h1>logo</h1>
         <label for="menu_open">
 
             <img src="/images/menu.svg" alt="Open Menu Label" class="hoverable">
@@ -30,7 +30,7 @@
         <section id="mobile_menu">
             <div id="menu_header">
                 <label for="menu_close">
-                    <h3>Close menu</h3>
+                   <img src="/images/exit.png" alt="">
                 </label>
             </div>
             <a href="/index.html">Home</a>
@@ -42,61 +42,58 @@
     </header>
 
     <main id="page_main">
-        <article>
-            <h2>Our Team</h2>
-            <div class="staff-directory">
+
+
+
+        <h1>Contact Us</h1>
+        <form action="" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        </section>
+        <section id="sec1">
+            <div>
+                <div id="div">
+                    <h4>
+                        Our innovative solution is designed to help you achieve your goals faster and more efficiently than ever before. With cutting-edge technology and unparalleled support, we're here to help you succeed. Don't wait any longer 
+                    </h4>
+                    <button>Get a Quote</button>
+                </div>
+            </div>
+            <div id="hours">
+                <h2>Business Hours</h2>
                 <ul>
-                    <li>
-                        <img src="/images/ceo.jpeg" alt="John Doe" width="200px">
-                        <h3>John Doe</h3>
-                        <p>CEO</p>
-                        <p>Email: john.doe@kazi.com</p>
-                    </li>
-                    <li>
-                        <img src="/images/office-man.jpeg" alt="Jane Smith" width="200px">
-                        <h3>Jane Smith</h3>
-                        <p>Director</p>
-                        <p>Email: jane.smith@kazi.com</p>
-                    </li>
-                    <li>
-                        <img src="/images/ofiice-woman.jpeg" alt="Jane Smith" width="200px">
-                        <h3>Jane Smith</h3>
-                        <p>Dispach</p>
-                        <p>Email: jane.smith@kazi.com</p>
-                    </li>
+                    <li>Monday: 9am - 5pm</li>
+                    <li>Tuesday: 9am - 5pm</li>
+                    <li>Wednesday: 9am - 5pm</li>
+                    <li>Thursday: 9am - 5pm</li>
+                    <li>Friday: 9am - 5pm</li>
+                    <li>Saturday: 10am - 4pm</li>
+                    <li>Sunday: Closed</li>
                 </ul>
             </div>
-            <section id="sec1">
-                <div>
-                    <div id="div">
-                        <h3>Contact Us Right Now To Get A Quotation For All Your Shipping Requirements</h3>
-                    </div>
-                </div>
-                <div>
-                    <h2>Business Hours</h2>
-                    <ul>
-                        <li>Monday: 9am - 5pm</li>
-                        <li>Tuesday: 9am - 5pm</li>
-                        <li>Wednesday: 9am - 5pm</li>
-                        <li>Thursday: 9am - 5pm</li>
-                        <li>Friday: 9am - 5pm</li>
-                        <li>Saturday: 10am - 4pm</li>
-                        <li>Sunday: Closed</li>
-                    </ul>
-                </div>
-                <div id="div">
-                    <h2>Our Location</h2>
-                    <address>
-                        <p>11000 Stadium Rd</p>
-                        <p>Edmonton, AB</p>
-                        <p>T5A 4E3</p>
+            <div id="div">
+                <h2>Our Location</h2>
+                <address>
+                    <p>11000 Stadium Rd</p>
+                    <p>Edmonton, AB</p>
+                    <p>T5A 4E3</p>
 
-                    </address>
-                </div>
-            </section>
+                </address>
+            </div>
+        </section>
         </article>
         <div>
-            <iframe width="500" height="250" frameborder="0"
+            <iframe id="frame" width="500" height="250" frameborder="0"
                 src="https://www.bing.com/maps/embed?h=250&w=500&cp=53.55764570924308~-113.4762167930603&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
                 scrolling="no">
             </iframe>
@@ -107,26 +104,31 @@
             </div>
             <div>
                 <div id="div">
-                    <a href="tel:+17802005134"><strong>Call us:</strong> +17802005134</a>
-
+                    <button>
+                        <a href="tel:+17802005134"><strong>Call us</a>
+                    </button>
                 </div>
-                <div id="div">
-                    <a href="mailto:dannyganza04@gmail.com">Email us</a>
 
+                <div id="div">
+                    <button>
+                        <a href="mailto:dannyganza04@gmail.com">Email us</a>
+                    </button>
                 </div>
     </main>
 
     <footer id="pager_footer">
+
         <div>
             <img src="/images/acebook and twitter icons instagram_3596355.png" alt="" width="200px">
 
         </div>
         <div>
-            <img src="/images/My project.png" alt="">
-        </div>
-        <div>
             <p>© 2023 Kazi Logistics</p>
         </div>
+        <div>
+            <p>Terms and Provacy</p>
+        </div>
+
     </footer>
 </body>
 

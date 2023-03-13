@@ -19,6 +19,20 @@ main {
     text-align: center;
     width: 100%;
     background-image: url(/images/warehouse-background.jpeg);
+
+    button {
+        background-color: #2a62b6;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #45a049;
+        width: 100px;
+      }
 }
 
 #intro {
