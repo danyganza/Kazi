@@ -19,9 +19,6 @@ main {
     text-align: center;
     width: 100%;
     background-image: url(/images/warehouse-background.jpeg);
-   
-
-
 }
 
 a {
@@ -33,27 +30,21 @@ a {
   cursor: pointer;
   margin-bottom: 50px;
 }
-
 a:hover {
- 
   background-color: #45a049; 
-
 }
-
 #intro {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 #Products {
     display: grid;
     place-content: center;
 
     h3 {
         text-align: center;
-
     }
 
     p {
@@ -61,7 +52,6 @@ a:hover {
         margin-left: 50px;
         margin-right: 50px;
         height: 200px;
-
     }
 
     img {
@@ -71,7 +61,6 @@ a:hover {
         margin-top: 20px;
         margin-bottom: 2px;
     }
-
 }
 
 @media only screen and (min-width: 700px) {
@@ -80,7 +69,6 @@ a:hover {
         grid-template-columns: 2fr;
       width: 100%;
       place-items: center;
-   
     }
   
   }
@@ -94,5 +82,4 @@ a:hover {
       background-image: url(/images/background2.jpeg);
 
     }
-  
   }
