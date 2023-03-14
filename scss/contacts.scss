@@ -4,73 +4,79 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+#page_main {
+  min-width: 100%;
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(186, 207, 206);
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  iframe {
     width: 100%;
   }
-#page_main {
-      min-width: 100%;
-    min-height: 80vh;
-    display: grid;
-    place-items: center;
-    background-color: rgb(186, 207, 206);
-    margin-bottom: 20px;
-    margin-top: 20px;
 
-    iframe{
-      width: 100%;
+  #call {
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    h1 {
+      text-decoration: underline;
+      margin-bottom: 20px;
     }
-#call{
-  margin-top: 30px;
-  margin-bottom: 50px;
+  }
 
-  h1{
-    text-decoration: underline;
-    margin-bottom: 20px;
+
+  #hours {
+    place-items: center;
+  }
+
+  button {
+    background-color: #2a62b6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+    width: 100px;
+  }
+
+
+
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #div {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    width: 200px;
   }
 }
 
-
-    #hours {
-      place-items: center;
-    }
-
-    button {
-      background-color: #2a62b6;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    
-    button:hover {
-      background-color: #45a049;
-      width: 100px;
-    }
-    
-  
-
-    h1{
-      text-align: center;
-    }
-    
-    h2{
-      text-align: center;
-    }
-    #div {
-      width: 100%;
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-    h3{
-      width: 200px;
-    }
-}
 a {
   background-color: #2a62b6;
   color: #fff;
@@ -82,83 +88,80 @@ a {
 }
 
 a:hover {
- 
-  background-color: #45a049; 
-   text-decoration: underline;
+  background-color: #45a049;
+  text-decoration: underline;
 }
 
+form {
+  min-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
 
+label {
+  display: grid;
+  margin-bottom: 10px;
+}
 
-  form {
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #2a62b6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (min-width: 600px) {
+  #page_main {
+    display: grid;
     min-width: 100%;
-    margin: 0 auto;
+    place-items: center;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  #page-main {
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+    min-width: 100%;
+    margin-top: 40px;
+    background-image: url(/images/boat-wide.jpeg);
+  }
+
+  #sec1 {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url(/images/redtruck.jpeg);
     margin-bottom: 50px;
   }
-  
-  label {
-    display: grid;
-    margin-bottom: 10px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  button[type="submit"] {
-    background-color: #2a62b6;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  @media only screen and (min-width: 600px) {
-    #page_main {
-      display: grid;
-      min-width: 100%;
-      place-items: center;
-    }
 
-  }
-  @media only screen and (min-width: 1020px) {
-    #page-main {
-      display: grid;
-place-items: center;
-      min-height: 80vh;
-      min-width: 100%;
-      margin-top: 40px;
-      background-image: url(/images/boat-wide.jpeg);
-    }
-
-    #sec1 {
-      display: grid;
-      width: 100%;
-      place-items: center;
-      grid-template-columns:1fr 1fr 1fr;
-      background-image: url(/images/redtruck.jpeg);
-      margin-bottom: 50px;
-    }
- 
-    #div  h4{
-      place-items: center;
-      text-align: center;
-      text-overflow: wrap;
-      width: 300px;
-      margin-left: 20px;
-    }
-    h1{
-      margin-bottom: 50px;
-    }
+  #div h4 {
+    place-items: center;
+    text-align: center;
+    text-overflow: wrap;
+    width: 300px;
+    margin-left: 20px;
   }
 
+  h1 {
+    margin-bottom: 50px;
+  }
+}
