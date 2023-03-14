@@ -1,5 +1,5 @@
 #pager_header {
-  min-height: 15vh;
+  min-height: 10vh;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
@@ -102,11 +102,8 @@ footer {
   background-image: url(/images/background4.jpeg);
 }
 footer img {
-  width: 200px;
-}
-footer #mark {
-  display: grid;
-  place-self: center;
+  height: 100px;
+  width: 100px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -114,7 +111,7 @@ footer #mark {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+    min-width: 100%;
   }
 }
 @media only screen and (min-width: 1020px) {
@@ -122,7 +119,7 @@ footer #mark {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+    min-width: 100%;
   }
 }
 * {
@@ -162,168 +159,98 @@ body {
   display: grid;
 }
 
-#page_main1 {
-  display: grid;
-  place-items: center;
-  width: 100%;
+#page_main {
   min-height: 80vh;
-  background-image: url(/images/background2.jpeg);
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-#page_main1 h2 {
-  text-align: center;
-  margin-top: 50px;
-  margin: 20px;
-}
-#page_main1 #logo {
-  width: 100px;
-}
-#page_main1 button {
-  background-color: #2a62b6;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-#page_main1 button:hover {
-  background-color: #45a049;
-  width: 100px;
-}
-
-.mission {
-  margin-top: 100px;
-}
-.mission h2 {
-  margin-top: 100px;
-  text-align: center;
-}
-.mission h4 {
-  text-align: center;
-  width: 300px;
-}
-.mission p {
-  text-align: center;
-  width: 250px;
-}
-
-#values {
-  display: grid;
-  margin-bottom: 50px;
-  background-image: url(/images/background2.jpeg);
-}
-#values h1 {
-  text-decoration: underline;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-#values ul {
-  margin-left: 20px;
-}
-#values iframe {
-  margin-right: 20px;
-}
-
-h1 {
-  text-align: center;
-}
-
-#about1 {
   display: grid;
   place-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
   width: 100%;
+  background-image: url(/images/background4.jpeg);
 }
-#about1 p {
+#page_main p {
+  margin-bottom: 50px;
   text-align: center;
-  margin-bottom: 20px;
 }
-#about1 img {
-  display: grid;
-  object-fit: cover;
-  width: 100%;
-  height: 200px;
+#page_main h2 {
+  text-align: center;
+}
+#page_main h1 {
+  text-align: center;
+  text-decoration: underline;
   margin-top: 20px;
   margin-bottom: 10px;
-  border-radius: 5%;
 }
-#about1 h3 {
+#page_main h3 {
   text-align: center;
 }
+#page_main #owner img {
+  object-fit: cover;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+#page_main .values {
+  width: 80%;
+}
+#page_main .val {
+  width: 80%;
+  margin-bottom: 20px;
+}
+#page_main .val h1 {
+  margin-top: 50px;
+}
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   #page_main {
     display: grid;
+    min-width: 100%;
     place-items: center;
   }
-  #about1 {
+  #owner {
     display: grid;
-    place-items: center;
-    grid-template-columns: 2fr 2fr;
-    width: 100%;
-    margin: 20px;
+    grid-template-columns: 1fr 1fr;
   }
-  p {
-    width: 100%;
-    height: 300px;
+  #owner img {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15%;
   }
-  h3 {
-    width: 100%;
+  .values {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .abou2 {
-    width: 300px;
-    height: 500px;
-    margin: 50px;
+  .values p {
+    width: 200px;
+    height: 330px;
+    background-image: url(/images/warehouse-background.jpeg);
   }
 }
 @media only screen and (min-width: 1020px) {
-  #page_main1 {
-    width: 100%;
-  }
-  #page_main1 h4 {
-    text-align: center;
-    width: 700px;
-  }
-  #about1 {
+  #page_main {
     display: grid;
+    min-width: 100%;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 100%;
-    background-image: url(/images/background2.jpeg);
   }
-  p {
-    text-align: center;
-    width: 300px;
-    height: 500px;
-  }
-  h3 {
-    text-align: center;
-  }
-  img {
-    width: 300px;
-    object-fit: cover;
-    margin-left: 10px;
-    margin-right: 30px;
-  }
-  .mission {
+  #owner {
     display: grid;
-    place-items: center;
-    max-height: 300px;
+    grid-template-columns: 1fr 1fr;
+  }
+  #owner img {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .values {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-image: url(/images/background2.jpeg);
   }
-  .mission #p1 {
-    background-color: rgb(12, 97, 157);
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 300px;
+  .values p {
+    width: 340px;
+    height: 200px;
+    background-color: none;
   }
-  #values {
-    grid-template-columns: 2fr 1fr;
+  .values p:hover {
+    height: 300px;
+    width: 500px;
+    color: rgb(44, 30, 10);
   }
 }
 
