@@ -1,1 +1,1 @@
-Kazi-logistics.dannyg.tech
+https://kazi.dannyg.tech/
